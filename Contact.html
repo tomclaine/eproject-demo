@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Reflections</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/HomePage.css">
+  <link rel="stylesheet" href="css/header_footer.css">
+  <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="./Index.html">
+          <img src="./image/logo/png/logo-color.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link item-menu active" aria-current="page" href="./Index.html">Home</a>
+            </li>
+            <li class="nav-item item-menu">
+              <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="./Produtcts-List.html?category=Living&cattype=category">Drawing/Living room
+                    mirrors</a></li>
+                <li><a href="./Produtcts-List.html?category=Bathroom&cattype=category">Bathroom mirrors</a>
+                </li>
+                <li><a href="./Produtcts-List.html?category=Dressing&cattype=category">Dressing mirrors</a></li>
+                <li><a href="./Produtcts-List.html?category=Bedroom&cattype=category">Bedroom mirrors</a></li>
+                <li class="add-category">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#createCategory">
+                    <i class="fa fa-plus-circle"></i> Add category
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item item-menu">
+              <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="./Produtcts-List.html?category=Wooden&cattype=material">Wooden framed</a>
+                </li>
+                <li><a href="./Produtcts-List.html?category=Acrylic&cattype=material">Acrylic bordered</a>
+                </li>
+                <li><a href="./Produtcts-List.html?category=Metal&cattype=material">Metal bordered</a>
+                </li>
+                <li><a href="./Produtcts-List.html?category=Decorative&cattype=material">Decorative
+                    mirrors</a></li>
+                <li><a href="./Produtcts-List.html?category=LED&cattype=material">LED mirrors</a></li>
+                <li><a href="./Produtcts-List.html?category=Bluetooth&cattype=material">Bluetooth
+                    mirrors</a></li>
+                <li class="add-category">
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#createCategory">
+                    <i class="fa fa-plus-circle"></i> Add category
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="item-menu"><a class="nav-link" href="./Contact.html">Contact Us</a></li>
+          </ul>
+          <div class="search">
+            <form action="./Produtcts-List.html" method="get" class="d-flex" role="search">
+              <input type="hidden" name="cattype" value="search">
+              <input type="search" class="searchTerm" name="search" placeholder="What are you search for?">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="createCategory" tabindex="-1" aria-labelledby="createCateLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="createCateLabel">Create category</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="category-name" class="col-form-label">Name:</label>
+                      <input type="text" class="form-control" id="category-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="description-text" class="col-form-label">Description:</label>
+                      <textarea class="form-control" id="description-text"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <i><span class="badge text-bg-danger">Warning</span>: Names and information
+                        generated are subject to <a href="#"> our community standards.</a></i>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Create your category</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="content">
+    <!-- Contact -->
+    <div class="container" id="contact">
+      <!-- feature -->
+      <div class="feature m-3">
+        <div class="row">
+          <h3 class="heading">
+            <span class="heading__heading-text">
+              Contact
+            </span>
+          </h3>
+        </div>
+        <p><span><br></span></p>
+        <div class="row">
+          <div class="col-sm m-1">
+            <div class="info m-3">
+              <i class="fa fa-map-marker" style="width:30px"></i> 175 Tay Son street, Dong Da district, Hanoi,
+              Vietnam<br>
+              <i class="fa fa-phone" style="width:30px"></i> Phone: +84 382020858<br>
+                <a href="mailto:info@aptech.vn" class="mail"><i class="fa fa-envelope" style="width:30px"> </i> 
+                Email: info@aptech.vn<br></a>
+            </div>
+            <!-- Form contact -->
+            <form action="" method="get" class="m-3">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="Email" placeholder="name@example.com">
+                <label for="Email">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="Name" placeholder="Your name...">
+                <label for="Name">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave your message here" id="message"
+                  style="height: 100px"></textarea>
+                <label for="message">Your message</label>
+              </div>
+              <button type="submit" id="liveToastBtn" class="btn btn-dark m-2">Send message</button>
+            </form>
+            <!-- end form contact-->
+          </div>
+          <div class="col-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6275662249514!2d105.82147255111198!3d21.00756119380739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7dbfbdcdbf%3A0x85d8837c4ab9ad4f!2zVHLGsOG7nW5nIMSQw6BvIFThuqFvIEzhuq1wIFRyw6xuaCBWacOqbiBRdeG7kWMgVOG6vyBIYW5vaS1BcHRlY2g!5e0!3m2!1svi!2s!4v1676781173921!5m2!1svi!2s"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p style="text-align: center;">
+              <a target="_blank"
+                href="https://maps.google.com/maps?ll=21.007556,105.823667&z=16&t=m&hl=vi&gl=US&mapclient=embed&cid=9644603171866783055">Find
+                the way to visit here
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p><span><br></span></p>
+  <p><span><br></span></p>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="contact footer-item col-sm mb-2">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i>175 Tay Son street, Dong Da district, Hanoi, Vietnam</li>
+            <li><a href="mailto:info@aptech.vn" class="mail"><i class="fa fa-envelope" style="width:30px"> </i> 
+              info@aptech.vn<br></a></li>
+            <li><i class="fas fa-phone"></i>+84 382020858</li>
+          </ul>
+        </div>
+        <div class="social footer-item col-sm mb-2">
+          <h3>Follow Us</h3>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+
+        </div>
+        <div class="product footer-item col-sm mb-2">
+          <h3>Company Info</h3>
+          <ul>
+            <li><a href="./Contact.html">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="main-info footer-item col-sm mb-2">
+          <h3>Purchase Info</h3>
+          <ul>
+            <li><a href="#">Payment Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+  <script>
+    // Script to open and close sidebar when on tablets and phones
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Slideshow Apartment Images
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-opacity-off";
+    }
+  </script>
+
+</body>
+
+</html>

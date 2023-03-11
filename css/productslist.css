@@ -1,0 +1,108 @@
+#wrapper{
+    color: #111;
+    line-height: 1.15;
+}
+.content-product h3{
+    font-size: 18px;
+    color: #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    color:#555;
+    font-weight: 600;
+}
+
+.headline{
+    text-align: center;
+    margin: 40px 40px;
+}
+.title-filter h4{
+    font-family: "Galada", sans-serif;
+    font-weight: 500;
+
+}
+.title-filter span{
+    font-weight: bold;
+}
+.tag-products{
+    display: flex;
+}
+.tag-products span{
+    margin-right: 2px;
+}
+.text-description .name-product{
+    font-size: 18px;
+    font-weight: bold;
+}
+.content-product{
+    display: flex;
+}
+.content-product .info-product{
+    width: 70%;
+}
+.content-product .info-product .price-product{
+    display: flex;
+    width: 100%;
+}
+.content-product .info-product .price-product .origin-price{
+    font-size: 15px;
+    color: var(--textColor);
+}
+.content-product .info-product .price-product .sale-price{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--black);
+}
+.content-product .info-product .decription-sumary p{
+    font-size: 15px;
+}
+.content-product .payment-button{
+    width: 30%;
+    position: relative;
+    margin: 0 10px;
+}
+.content-product .payment-button a{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.card{
+    height: 600px;
+    box-shadow: 0 8px 8px -4px #89939E;
+    overflow: hidden;
+}
+.card img{
+    height: 300px;
+    object-fit: contain;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card img:hover{
+    -webkit-transform: scale(1.04);
+	transform: scale(1.04);
+    object-fit: contain;
+}
+.filter{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5%;
+}
+.text-not-found{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 0 68px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    margin-top: 20%;
+}
+.text-not-found h1{
+    font-weight: 700;
+    font-family: "Galada", sans-serif;
+}

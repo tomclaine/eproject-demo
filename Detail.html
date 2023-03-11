@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Reflections | Detail</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/HomePage.css">
+  <link rel="stylesheet" href="./css/detail.css">
+  <link rel="stylesheet" href="./css/header_footer.css">
+  <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <script src="./js/dumpData.js"></script>
+</head>
+<!-- home page -->
+<div class="header">
+  <!-- test nav-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./Index.html">
+        <img src="./image/logo/png/logo-color.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+        <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link item-menu active" aria-current="page" href="./Index.html">Home</a>
+          </li>
+          <li class="nav-item item-menu">
+            <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./Produtcts-List.html?category=Living&cattype=category">Drawing/Living room
+                  mirrors</a></li>
+              <li><a href="./Produtcts-List.html?category=Bathroom&cattype=category">Bathroom mirrors</a>
+              </li>
+              <li><a href="./Produtcts-List.html?category=Dressing&cattype=category">Dressing mirrors</a></li>
+              <li><a href="./Produtcts-List.html?category=Bedroom&cattype=category">Bedroom mirrors</a></li>
+              <li class="add-category">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#createCategory">
+                  <i class="fa fa-plus-circle"></i> Add category
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item item-menu">
+            <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="./Produtcts-List.html?category=Wooden&cattype=material">Wooden framed</a>
+              </li>
+              <li><a href="./Produtcts-List.html?category=Acrylic&cattype=material">Acrylic bordered</a>
+              </li>
+              <li><a href="./Produtcts-List.html?category=Metal&cattype=material">Metal bordered</a>
+              </li>
+              <li><a href="./Produtcts-List.html?category=Decorative&cattype=material">Decorative
+                  mirrors</a></li>
+              <li><a href="./Produtcts-List.html?category=LED&cattype=material">LED mirrors</a></li>
+              <li><a href="./Produtcts-List.html?category=Bluetooth&cattype=material">Bluetooth
+                  mirrors</a></li>
+              <li class="add-category">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#createCategory">
+                  <i class="fa fa-plus-circle"></i> Add category
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="item-menu"><a class="nav-link" href="./Contact.html">Contact Us</a></li>
+        </ul>
+        <div class="search">
+          <form action="./Produtcts-List.html" method="get" class="d-flex" role="search">
+            <input type="hidden" name="cattype" value="search">
+            <input type="search" class="searchTerm" name="search" placeholder="What are you search for?">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="createCategory" tabindex="-1" aria-labelledby="createCateLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="createCateLabel">Create category</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="category-name" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="category-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="description-text" class="col-form-label">Description:</label>
+                    <textarea class="form-control" id="description-text"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <i><span class="badge text-bg-danger">Warning</span>: Names and information
+                      generated are subject to <a href="#"> our community standards.</a></i>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Create your category</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="container content">
+
+  <div class="row">
+
+    <!-- product -->
+    <div class="col-sm-12">
+      <div>
+        <div class="row mb-3">
+          <div class="col-sm-6">
+            <div id="image"></div>
+            <div id="slide-wrapper">
+              <div id="slider">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h2 id="name" class="name__product mt-2"></h2>
+            <div class="payment-section">
+              <div class="payment-price">
+                <span id="origin" class="origin-price m-2">
+                </span>
+                <h2 id="sale" class="sale-price m-2"></h2>
+                <button class="btn btn-dark buy__button">Buy</button>
+              </div>
+              <p>
+                We accept:
+                <i class="fa fa-credit-card w3-large"></i>
+                <i class="fa fa-cc-mastercard w3-large"></i>
+                <i class="fa fa-cc-amex w3-large"></i>
+                <i class="fa fa-cc-cc-visa w3-large"></i>
+                <i class="fa fa-cc-paypal w3-large"></i>
+              </p>
+            </div>
+            <div class="w3-row w3-large m-3">
+              <div id="category" class="w3-col s6">
+              </div>
+            </div>
+            <hr>
+            <div class="w3-row w3-la m-3">
+              <h4><strong>Material </strong></h4>
+              <div id="materials" class="w3-col s6">
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <h4><strong>Description</strong></h4>
+          <p id="dep">
+          </p>
+		  <a href="./File.docx" style="color: white">
+          <button class="btn btn-dark">
+            <i class="fa fa-download"></i>
+            Download document
+			</a>
+          </button>
+        </div>
+
+
+      </div>
+      <p><span><br><br></span></p>
+      <p><span><br></span></p>
+      <!-- Slideshow Related Product -->
+      <div class="related-product mb-3">
+        <div class="row mt-2">
+          <h3 class="heading">
+            <span class="heading__heading-text">
+              Related Products
+            </span>
+          </h3>
+        </div>
+        <div id="relate" class="row">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Slideshow Related Product -->
+</div>
+<!-- end product -->
+</div>
+</div>
+
+
+
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="contact footer-item col-sm mb-2">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i>175 Tay Son street, Dong Da district, Hanoi, Vietnam</li>
+          <li>
+           
+            <a href="mailto:info@aptech.vn" class="mail"> 
+              <i class="fa fa-envelope" style="width:30px"> </i>
+              info@aptech.vn<br>
+            </a>
+          </li>
+          <li><i class="fas fa-phone"></i>+84 382020858</li>
+        </ul>
+      </div>
+      <div class="social footer-item col-sm mb-2">
+        <h3>Follow Us</h3>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+
+      </div>
+      <div class="product footer-item col-sm mb-2">
+        <h3>Company Info</h3>
+        <ul>
+          <li><a href="./Contact.html">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+        </ul>
+      </div>
+      <div class="main-info footer-item col-sm mb-2">
+        <h3>Purchase Info</h3>
+        <ul>
+          <li><a href="#">Payment Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./js/Detail.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

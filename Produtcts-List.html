@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compattible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Reflections | Product List</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/2669f91611.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/productslist.css">
+    <script src="./js/dumpData.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <!-- Navbar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./Index.html">
+                    <img src="./image/logo/png/logo-color.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav main-menu me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link item-menu active" aria-current="page" href="./Index.html">Home</a>
+                        </li>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link" href="#">Room Mirror <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="./Produtcts-List.html?category=Living&cattype=category">Drawing/Living room
+                                        mirrors</a></li>
+                                <li><a href="./Produtcts-List.html?category=Bathroom&cattype=category">Bathroom
+                                        mirrors</a>
+                                </li>
+                                <li><a href="./Produtcts-List.html?category=Dressing&cattype=category">Dressing
+                                        mirrors</a></li>
+                                <li><a href="./Produtcts-List.html?category=Bedroom&cattype=category">Bedroom
+                                        mirrors</a></li>
+                                <li class="add-category">
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                        data-bs-target="#createCategory">
+                                        <i class="fa fa-plus-circle"></i> Add category
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item item-menu">
+                            <a class="nav-link" href="">Material <i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="./Produtcts-List.html?category=Wooden&cattype=material">Wooden framed</a>
+                                </li>
+                                <li><a href="./Produtcts-List.html?category=Acrylic&cattype=material">Acrylic
+                                        bordered</a>
+                                </li>
+                                <li><a href="./Produtcts-List.html?category=Metal&cattype=material">Metal bordered</a>
+                                </li>
+                                <li><a href="./Produtcts-List.html?category=Decorative&cattype=material">Decorative
+                                        mirrors</a></li>
+                                <li><a href="./Produtcts-List.html?category=LED&cattype=material">LED mirrors</a></li>
+                                <li><a href="./Produtcts-List.html?category=Bluetooth&cattype=material">Bluetooth
+                                        mirrors</a></li>
+                                <li class="add-category">
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                        data-bs-target="#createCategory">
+                                        <i class="fa fa-plus-circle"></i> Add category
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item-menu"><a class="nav-link" href="./Contact.html">Contact Us</a></li>
+                    </ul>
+                    <div class="search">
+                        <form action="./Produtcts-List.html" method="get" class="d-flex" role="search">
+                            <input type="hidden" name="cattype" value="search">
+                            <input type="search" class="searchTerm" name="search"
+                                placeholder="What are you search for?">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="createCategory" tabindex="-1" aria-labelledby="createCateLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="createCateLabel">Create category</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="category-name" class="col-form-label">Name:</label>
+                                            <input type="text" class="form-control" id="category-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="description-text" class="col-form-label">Description:</label>
+                                            <textarea class="form-control" id="description-text"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <i><span class="badge text-bg-danger">Warning</span>: Names and information
+                                                generated are subject to <a href="#"> our community standards.</a></i>
+                                        </div>
+                                        <button type="submit" class="btn btn-dark">Create your category</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav-->
+        <div class="slider">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./image/guong-1_1555619695_1567477479.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img src="./image/guong-3_1555620474_1567477457.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img src="./image/guong-5_1555620870_1567477464.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img src="./image/guong-6_1555621583_1567477271.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container content">
+        <div class="headline">
+            <h3>Product list</h3>
+        </div>
+        <div class="row">
+            <!-- Filter -->
+            <div class="col-sm-3 mb-3">
+                <div class="accordion accordion-flush filter" id="filter">
+                    <div class="accordion-item">
+                        <div class="title-filter">
+                            <a href="./Index.html">
+                                <h4 class="m-1 p-3">Clear Reflections</h4>
+                            </a>
+                            <span class="m-1 p-3">FILTER BY: </span>
+
+                        </div>
+                        <h2 class="accordion-header" id="flush-room__mirrors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseRoom__mirrors" aria-expanded="true"
+                                aria-controls="flush-collapseRoom__mirrors">
+                                ROOM MIRRORS
+                            </button>
+                        </h2>
+                        <div id="flush-collapseRoom__mirrors" class="accordion-collapse collapse show"
+                            aria-labelledby="flush-room__mirrors">
+                            <div class="accordion-body">
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxDrawing" class="category"
+                                        onclick="filter()" value="Living">
+                                    <label for="checkboxDrawing">Drawing/Living room mirrors</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxBathroom" class="category"
+                                        onclick="filter()" value="Bathroom">
+                                    <label for="checkboxBathroom">Bathroom mirrors</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxDressing" class="category"
+                                        onclick="filter()" value="Dressing">
+                                    <label for="checkboxDressing">Dressing mirrors</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxBedroom" class="category"
+                                        onclick="filter()" value="Bedroom">
+                                    <label for="checkboxBedroom">Bedroom mirrors</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-material">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseMaterial" aria-expanded="true"
+                                aria-controls="flush-collapseMaterial">
+                                MATERIAL
+                            </button>
+                        </h2>
+                        <div id="flush-collapseMaterial" class="accordion-collapse collapse show"
+                            aria-labelledby="flush-material">
+                            <div class="accordion-body">
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxWooden" class="materials"
+                                        onclick="filter()" value="Wooden">
+                                    <label for="checkboxWooden">Wooden framed</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxAcrylic" class="materials"
+                                        onclick="filter()" value="Acrylic">
+                                    <label for="checkboxAcrylic">Acrylic framed</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxMetal" class="materials"
+                                        onclick="filter()" value="Metal">
+                                    <label for="checkboxMetal">Metal framed</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxDecorative" class="materials"
+                                        onclick="filter()" value="Decorative">
+                                    <label for="checkboxDecorative">Decorative mirrors</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxLED" class="materials" onclick="filter()"
+                                        value="LED">
+                                    <label for="checkboxLED">LED mirrors</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="checkboxBluetooth" class="materials"
+                                        onclick="filter()" value="Bluetooth">
+                                    <label for="checkboxBluetooth">Bluetooth mirrors</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-shape">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseShape" aria-expanded="false"
+                                aria-controls="flush-collapseShape">
+                                SHAPE
+                            </button>
+                        </h2>
+                        <div id="flush-collapseShape" class="accordion-collapse collapse" aria-labelledby="flush-shape">
+                            <div class="accordion-body">
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="Rectangular" class="shape"
+                                        onclick="filter2(this.id,'shape')" value="Rectangular">
+                                    <label for="Rectangular">Rectangular</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="Oval" class="shape"
+                                        onclick="filter2(this.id,'shape')" value="Oval">
+                                    <label for="Oval">Oval</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="Round" class="shape"
+                                        onclick="filter2(this.id,'shape')" value="Round">
+                                    <label for="Round">Round</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="Hexagonal" class="shape"
+                                        onclick="filter2(this.id,'shape')" value="Hexagonal">
+                                    <label for="Hexagonal">Hexagonal</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="Sunburst" class="shape"
+                                        onclick="filter2(this.id,'shape')" value="Sunburst">
+                                    <label for="Sunburst">Sunburst</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-price">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsePrice" aria-expanded="false"
+                                aria-controls="flush-collapsePrice">
+                                PRICE
+                            </button>
+                        </h2>
+                        <div id="flush-collapsePrice" class="accordion-collapse collapse" aria-labelledby="flush-price">
+                            <div class="accordion-body">
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="Lowtohigh" class="price"
+                                        onclick="filter2(this.id,'price')" value="Lowtohigh">
+                                    <label for="Lowtohigh">From low to high</label>
+                                </div>
+                                <div class="checkbox-filer m-2">
+                                    <input type="checkbox" name="" id="Hightolow" class="price"
+                                        onclick="filter2(this.id,'price')" value="Hightolow">
+                                    <label for="Hightolow">From high to low</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Filter -->
+
+            <!-- product list -->
+            <div class="col-sm-9">
+                <div id="wrapper">
+                    <div id="products" class="row m-1 mb-2">
+                    </div>
+                     <div id="error"></div>
+                    <ul id="page" class="pagination">
+                    </ul>
+                </div>
+                <!-- end product list -->
+            </div>
+
+        </div>
+        <!-- End content -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="contact footer-item col-sm mb-2">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>175 Tay Son street, Dong Da district, Hanoi,
+                                Vietnam
+                            </li>
+                            <li>
+                                <a href="mailto:info@aptech.vn" class="mail">
+                                    <i class="fa fa-envelope" style="width:30px"> </i>
+                                    info@aptech.vn<br></a>
+                            </li>
+                            <li><i class="fas fa-phone"></i>+84 382020858</li>
+                        </ul>
+                    </div>
+                    <div class="social footer-item col-sm mb-2">
+                        <h3>Follow Us</h3>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+
+                    </div>
+                    <div class="product footer-item col-sm mb-2">
+                        <h3>Company Info</h3>
+                        <ul>
+                            <li><a href="./Contact.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-info footer-item col-sm mb-2">
+                        <h3>Purchase Info</h3>
+                        <ul>
+                            <li><a href="#">Payment Policy</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/product-list.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
